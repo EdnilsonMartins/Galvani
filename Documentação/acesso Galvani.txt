@@ -1,0 +1,80 @@
+http://tendenza.com.br/clientes/galvani/gec.rar
+
+Caminha: ftp.galvaniengenharia.com.br
+Usuário: gec
+Senha: zat123#
+
+URL: site.galvaniengenharia.com.br
+
+------------------------------------------------------------------------
+
+AZURE
+https://manage.windowsazure.com
+ti@tendenza.com.br
+Ten2012za#
+
+Banco de Dados
+Server  : xpbzlzw7zk.database.windows.net,  1433
+Base	: dbGRUPPO
+Usuário : usuGRUPPOAdmin
+Senha   : letsGRUPPO2015!
+
+------------------------------------------------------------------------
+
+http://gruppo.tendenza.com.br
+
+Host    : waws-prod-cq1-001.ftp.azurewebsites.windows.net
+Usuário : gruppo01\tendenza
+Senha   : 123Mudar#
+
+
+URL	: gruppowcf01.azurewebsites.net
+Host	: ftp://waws-prod-cq1-001.ftp.azurewebsites.windows.net
+Usuário	: gruppowcf01\tendenza
+Senha	: 123Mudar#
+
+----
+Arquivos que foram adicionados direto no FTP após o deploy:
+- Para resolver o problema foram adicionados manualmente as seguintes referencias.
+System.Web.Http.WebHost.dll
+System.Web.Http.dll
+System.Net.Http.Formatting.dll
+Microsoft.Web.Infrastructure.dll
+
+
+
+----
+1. Começar pelas internas: Exemplo: Loteamentos.
+2. Contatos
+3. Video nao executa.
+4. Sempre que tiver sub menu mostrar igual a quem_somos.html
+5. Exemplo de página interna: loteamentos.html
+
+Site para referencia de conteudo: 104.131.37.124/galvani/
+
+Sugestões de Melhorias:
+1. No Contato, configurar no banco de dados o endereço de e-mail do "no-reply@xxx.com.br"
+
+Melhorias:
+1. CKEditor ajustado para permitir tags HTML5.
+
+
+Issues:
+1. O handler local não está funcionando.
+2. Precisa carregar as imagens no banco de dados.
+
+1. Interna:
+   O texto ocupa a extensão toda. (OK)
+   Se tiver imagem destaque, o texto fica a esquerda e a imagem alinhada a direita. (ok)
+   A galeria de fotos fica sempre alinha a esquerda (OK)
+2. Menu c/ Submenu (OK)
+3. Contato
+179.114.122.76
+179.169.130.156
+
+materia vou trocar por página - Ok!
+
+---------------------
+Mobile
+27/08 - Recebi o material do mobile.
+http://m.galvaniengenharia.com.br/

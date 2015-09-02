@@ -1,0 +1,62 @@
+#header.pt {
+  background-image: url(../img/backgrounds/loteamentos-pt.jpg);  
+}
+#header.en {
+  background-image: url(../img/backgrounds/loteamentos-en.jpg);  
+}
+#header.es {
+  background-image: url(../img/backgrounds/loteamentos-es.jpg);  
+}
+
+#header h1 {
+  width: 887px;
+  height: 101px;
+  background: url(../img/titulos/sustentabilidade.png) center center no-repeat;
+  margin: 225px auto 0;
+}
+#main {
+  background: url(../img/loteamentos-e-sustentabilidade.jpg) center top no-repeat;
+  margin-bottom: 60px;
+}
+#main h2 {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1.1em;
+  text-transform:uppercase;
+}
+#main .conteudoLoteamentos {
+  padding: 0 0 60px 180px;
+}
+#main .conteudoLoteamentos p {
+  width: 45%;
+}
+#main .conteudoLoteamentos .caracteristicasArea {
+  list-style: none;
+  padding: 0;
+}
+#main .conteudoLoteamentos .caracteristicasArea li {
+  background: url(../img/itensCaracteristicasArea.png) center center no-repeat;
+  width: 110px;
+  height: 109px;
+  float: left;
+  color: #a1a1a1;
+  font-size: 13px;
+  text-align: center;
+  margin-right: 12px;
+}
+#main .conteudoLoteamentos .caracteristicasArea li span {
+  display: block;
+}
+#main .conteudoLoteamentos .caracteristicasArea .itemA span {
+  padding-top: 30px;
+}
+#main .conteudoLoteamentos .caracteristicasArea .itemB span {
+  padding-top: 35px;
+}
+#main .conteudoLoteamentos .caracteristicasArea .itemC span {
+  padding-top: 18px;
+}
+#main .conteudoLoteamentos .caracteristicasArea .itemD span {
+  padding-top: 17px;
+}
+/*# sourceMappingURL=loteamentos.css.map */

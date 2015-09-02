@@ -1,0 +1,281 @@
+﻿#header {
+    background-image: url('../img/backgrounds/desenvolvimento.jpg');      
+}
+
+#main {
+    padding-bottom: 60px;
+
+    #menuQuemSomos {
+        height: 70px;
+        background-color: #ebebeb;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            width: 25%;
+            float: left;
+            text-align: center;
+            line-height: 70px;
+            a {
+                font-size: 17px;
+                font-size: 1.1rem;
+                font-weight: 300;
+                color: #9f9f9f;
+            }
+            a:hover {
+                font-weight: 900;
+                color: #aba000;
+            }
+            a.menuAtivo {
+                font-weight: 900;
+                color: #aba000;
+                border-bottom: 10px solid #aba000;
+                padding-bottom: 15px;
+            }
+        }
+    }
+
+    .conteudoRelacaoComunidade {
+        display: none;
+        background: url('../img/relacao-com-a-comunidade.png') 125% 0 no-repeat;
+        p {
+            width: 45%;
+        }
+    }    
+    a {
+        color: #135328;
+        font-weight: 900;
+    }
+    h2 {
+        font-size: 48px;
+        font-size: 3rem;
+        line-height: 1.1em;
+        font-weight: 900;
+        span {
+          color: #aba000;  
+        }
+    }
+    h3 {
+        font-size: 33px;
+        font-size: 2.05rem;
+        font-weight: 900;
+    }    
+    h5 {
+        font-size: 16px;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0 0 0 0;
+    }
+
+    .conteudoFertilizantes {
+        display: none;
+    }
+
+    .conteudoCompromisso {
+        display: none;
+        background: url('../img/compromisso-galvani.png') 125% 0 no-repeat; 
+        padding-top: 30px;      
+        margin-top: 25px; 
+        p {
+            width: 45%;
+        }
+        .segurancaNoTrabalho {
+            height: 190px;
+            padding: 60px 0 0 320px;
+            margin: 60px 0;
+            background: url('../img/seguranca-no-trabalho.png') left center no-repeat;
+            p {
+                width: 100%;
+                line-height: 1.7em;
+            }            
+        }
+        .linhaVerde {
+            p {
+                width: 100%;
+            }
+        }
+    }
+
+    .conteudoQuemSomos {
+        h2 {
+            width: 430px;
+            float: left;
+            height: 330px;
+            padding-top: 130px;
+            margin: 0 0 0 0;
+            text-align: center;
+        }
+        .logoQuarentaCincoAnos {
+            display: block;
+            margin: 20px 0 10px;
+        }
+        .quarentaCincoAnosHistoria, .construimosNossaHistoria {
+            width: 45%;
+            margin: 50px 0;
+        }
+        .quarentaCincoAnosHistoria {            
+            float: left;
+            text-align: right;
+            line-height: 1.5em;            
+        }
+        .construimosNossaHistoria {
+            float: right;
+            text-align: left;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 21px;
+            font-size: 1.3rem;            
+        }        
+
+        .linhaDoTempo {
+            .navegacaoLinhaTempo {
+                width: 1020px;
+                margin: 40px auto;
+                nav {
+                    background: url('../img/bgLinhadoTempo.png') center center no-repeat;
+                    div {
+                        padding: 1px;
+                    }
+                    div:first-child {
+                        margin-left: 35px;
+                    }
+                    a {
+                        display: block;
+                        color: #000;
+                        font-weight: 300;
+                        font-size: 18px;
+                        font-size: 1.2rem;
+                        float: left;
+                        margin: 0 14px;
+                    }
+                    a:hover, .anoAtivo {
+                        color: #aba000;
+                        font-weight: 900;
+                    }
+                    a.anoTop {
+                        background: url('../img/icones/bgAnoTop.png') bottom center no-repeat;
+                        padding-bottom: 35px;
+                    }
+                    a.anoTop:hover, a.anoTop.anoAtivo {
+                        background: url('../img/icones/bgAnoTopActive.png') bottom center no-repeat;
+                    } 
+                    a.anoBottom {
+                        background: url('../img/icones/bgAnoBottom.png') top center no-repeat;
+                        padding-top: 35px;                        
+                    }
+                    a.anoBottom:hover, a.anoBottom.anoAtivo {
+                        background: url('../img/icones/bgAnoBottomActive.png') top center no-repeat;
+                    }
+                    a.anoDuplo {
+                        line-height: 15px;      
+                        margin-top: -18px;                  
+                        span {
+                            font-size: 10px;
+                            font-size: 0.65rem;
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .conteudoLinhaDoTempo {
+                width: 980px;
+                height: 130px;
+                padding: 10px 40px;
+                margin: 40px auto;
+                background-color: #b0a610;
+                .anoConteudoLinhaDoTempo {
+                    display: none;                    
+                    time {
+                        width: 90px;
+                        height: 125px;
+                        line-height: 125px;
+                        background: url(../img/bgAnoConteudoLinhaTempo.png) center right no-repeat;
+                        font-size: 30px;
+                        font-size: 1.9rem;
+                        color: #fff;
+                        padding-right: 20px;
+                        float: left;
+                    }
+                    
+                }    
+                .anoConteudoLinhaDoTempo:first-child {
+                    display: block;
+                }
+                .anoConteudoLinhaDoTempo.anoDuploConteudo time {
+                    line-height: 44px;
+                    text-align: center;
+                 }            
+                figure {
+                    img {
+                        display: block;
+                        float: left;
+                        min-width: 190px;
+                        min-height: 125px;
+                        max-width: 190px;
+                        max-height: 125px;
+                        margin: 0 30px;
+                    }
+                    figcaption {
+                        text-transform: uppercase;
+                        color: #fff;
+                        font-weight: 300;
+                        font-size: 18px;
+                        font-size: 1.2rem;
+                        padding-top: 35px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .conteudoMissaoVisaoValores {
+        ul {
+            list-style: none;
+            li {
+                float: left;
+                width: 33%;
+                height: 440px;
+                color: #9f9f9f;
+                text-align: center;                
+                h4 {
+                    width: 216px;
+                    height: 215px;
+                    margin: 0 auto;
+                    line-height: 215px;
+                    text-align: center;
+                    color: #fff;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-size: 1.2rem;
+                    background: url('../img/elipseGray.png') center center no-repeat;
+                }
+            }
+            #subItemMissao {
+                h4 {
+                    background: url('../img/elipseYellow.png') center center no-repeat;
+                }
+                p {
+                    color: #b0a610;
+                }
+            }
+            #subItemValores {
+                width: 100%;
+                text-align: left;
+                margin-top: 20px;
+                h4 {
+                    float: left;
+                    margin: 90px 100px 100px 9%;
+                }
+                p {
+                    margin: 0.1em 0 1.5em 0;
+                }
+            }
+        }
+    } 
+}
+
+

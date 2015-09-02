@@ -1,0 +1,27 @@
+﻿@model PortalGalvani.Models.Portal
+<footer id="footer">
+    <div class="bgTopoRodape"></div>
+    <div class="center">
+        @*<div id="acessibilidade">
+                <a href="acessibilidade" title="Acessibilidade" alt="Acessibilidade">Acessibilidade</a>
+            </div>*@
+        <div>
+            &nbsp;
+        </div>
+        <a href="" title="Galvani Engenharia" id="logoRodape">
+            <img src="@Url.Content("~/")assets/img/logoRodape.png" title="Galvani Engenharia" />
+        </a>
+        <p class="centralAtendimento">
+            @Resources.Footer.CentralAtendimento
+            <br />@Model.Configuracao.ContatoTelefonePrincipal
+        </p>
+        <p class="horarioAtendimento">
+            @Resources.Footer.HorarioAtendimento1
+            <br />@Resources.Footer.HorarioAtendimento2
+        </p>
+        <p class="clearfix">
+            @Resources.Footer.Slogan1
+            <strong>&nbsp;@Resources.Footer.Slogan2</strong>
+        </p>
+    </div>
+</footer>

@@ -1,0 +1,140 @@
+﻿@model PortalGalvani.Models.Portal
+@{
+    string fundo = "";
+    if (Model.BannerSuperiorInterna != null && Model.BannerSuperiorInterna.ArquivoId_Primaria != 0)
+    {
+        fundo = "http://gruppo01.azurewebsites.net/File?id=" + Model.BannerSuperiorInterna.ArquivoId_Primaria;
+        fundo = string.Format("height: 65% !important; background-image: url({0});", fundo);
+    }
+}
+<header id="header" style='@fundo'>
+    ;
+    <div id="fillWrapper"></div>
+    <div class="navContainer">
+        <div class="courtain"></div>
+        <div class="center clearfix menuZindex">
+            <ul class="translation-links">
+                <li>
+                    <a href="@Url.Action("SessionCulture", "Home", new { lang = "en-US", ReturnUrl = Request.Url })" class="traduzir " id="bandeiraUsa" data-lang="ingls"><img src="@Url.Content("~/")assets/img/icones/bandeira-eua.png" /></a>
+                </li>
+                <li>
+                    <a href="@Url.Action("SessionCulture", "Home", new { lang = "es-ES", ReturnUrl = Request.Url })" class="bandeira-eua " id="bandeiraEspanha" data-lang="espanhol"><img src="@Url.Content("~/")assets/img/icones/bandeira-espanha.png" /></a>
+                </li>
+                <li>
+                    <a href="@Url.Action("SessionCulture", "Home", new { lang = "pt-BR", ReturnUrl = Request.Url })" class="bandeira-eua " id="bandeiraBrasil"><img src="@Url.Content("~/")assets/img/icones/bandeira-brasil.png" /></a>
+                </li>
+            </ul>
+            <a href="@Url.Content("~/")" title="Galvani Engenharia" id="logo"></a>
+            <div type="button" id="mute" class="iconUnMute"></div>
+            <nav>
+                <ul>
+                    @foreach (var m in Model.Menus)
+                    {
+                        var _target = "_self";
+                        if (m.TargetId == 1) { _target = "_parent"; }
+                        if (m.TargetId == 2) { _target = "_blank"; }
+
+                        <li>
+                            <a href="@m.LinkURL" target="@_target" title="@m.Detalhe.Rotulo">@m.Detalhe.Rotulo</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        </div>
+    </div>
+    @if (Model.ExibeVideo)
+    {
+        <div id="videoGalvani">
+            <video id="video" muted autoplay>
+                <source src="@Url.Content("~/")assets/img/galvani-engenharia.mp4" type="video/mp4">
+            </video>
+        </div>
+        <link rel="stylesheet" href="@Url.Content("~/")assets/css/home.css">
+        <link rel="stylesheet" href="@Url.Content("~/")assets/css/video-js.css">
+    }
+    <div class="center clearfix" id="posContatoRapido">
+
+        @if (Model.ExibeContatoRapido)
+        {
+            <section id="contatoRapido" class="clearfix">
+                @using (Html.BeginForm("Index", "Home", new { }, FormMethod.Post))
+                {
+                    <input type="text" name="nome" id="nome" placeholder="@Resources.Contato.ContatoPlaceNome" />
+                    <input type="tel" name="telefone" id="telefone" class="sp_celphones" placeholder="@Resources.Contato.ContatoPlaceTelefone" />
+                    <div id="wrapperCustomSelect">
+                        <select name="assunto" id="assunto">
+                            <option value="Assunto">@Resources.Contato.ContatoPlaceAssunto</option>
+                            <option value="Brita">@Resources.Contato.ContatoPlaceBrita</option>
+                            <option value="Obras">@Resources.Contato.ContatoPlaceObras</option>
+                            <option value="Loteamentos">@Resources.Contato.ContatoPlaceLoteamentos</option>
+                            <option value="Asfalto">@Resources.Contato.ContatoPlaceAsfalto</option>
+                        </select>
+                    </div>
+                    <input type="text" name="cidade" id="cidade" placeholder="@Resources.Contato.ContatoPlaceCidade" />
+                    <input type="hidden" name="contatoRapido" id="contatoRapido" value="Galvani" />
+                    <a href="javascript:;" onclick="javascript: document.forms[0].submit();" name="enviar" id="enviar">@Resources.Contato.ContatoRapido</a>
+                    
+                    if (!String.IsNullOrEmpty(Model.NrProtocoloContato))
+                    {
+                        <span style="float: left; color: gray; background-color: white; border-radius: 0px; padding: 4px; margin: 4px 0 0 1px; width: 965px;">Obrigado pelo seu contato! Entraremos em contato o mais breve possível.</span>    
+                    }
+                    
+                }
+            </section>
+        }
+        @if (Model.ExibeContato)
+        {
+            <div class="clearfix"></div>
+            <h1>
+                @Resources.Contato.ContatoTexto1
+                <br>@Resources.Contato.ContatoTexto2
+                <br>
+                <span>@Resources.Contato.ContatoTexto3</span>
+                <span>@Resources.Contato.ContatoTexto4</span>
+
+                @if (!String.IsNullOrEmpty(Model.NrProtocoloContato))
+                {
+                    <br />
+                    <span><strong>@Resources.Contato.ContatoTexto5</strong></span>
+                }
+            </h1>
+            <section id="infoContato">
+                <p>
+                    <img src="@Url.Content("~/")assets/img/icones/local.png" />
+                    @Model.Configuracao.Localizacao
+                    <br />@Model.Configuracao.LocalizacaoComplemento
+                </p>
+                <p>
+                    <img src="@Url.Content("~/")assets/img/icones/fone.png" />
+                    <strong>@Resources.Contato.ContatoTelefone</strong>
+                    <br>@Model.Configuracao.ContatoTelefonePrincipal
+                </p>
+                <a href="https://www.google.com.br/maps/place/Galvani+Engenharia+e+Com%C3%A9rcio+Ltda/-22.768336,-47.167525,17z/data=!3m1!4b1!4m2!3m1!1s0x94c8957c8414817b:0x105ec9fbfd694b76"
+                   target="_blank" title="" class="greenButton">@Resources.Contato.ContatoComoChegar</a>
+                <p>
+                    <a href="javascript:;" title="" class="greenButton ancoraTrabalheConosco">@Resources.Contato.ContatoTrabalheConosco</a>
+                </p>
+            </section>
+            <section id="formContato">
+                @using (Html.BeginForm("Index", "Contato", new { }, FormMethod.Post))
+                {
+                    <input type="text" name="nome" id="nome" placeholder="@Resources.Contato.ContatoPlaceNome" />
+                    <input type="email" name="email" id="email" placeholder="@Resources.Contato.ContatoPlaceEmail" />
+                    <input type="tel" name="telefone" id="telefone" placeholder="@Resources.Contato.ContatoPlaceTelefone" />
+                    <select name="assunto" id="assunto">
+                        <option value="Assunto">@Resources.Contato.ContatoPlaceAssunto</option>
+                        <option value="Brita">@Resources.Contato.ContatoPlaceBrita</option>
+                        <option value="Obras">@Resources.Contato.ContatoPlaceObras</option>
+                        <option value="Loteamentos">@Resources.Contato.ContatoPlaceLoteamentos</option>
+                        <option value="Asfalto">@Resources.Contato.ContatoPlaceAsfalto</option>
+                    </select>
+                    <input type="text" name="areaAproximada" id="areaAproximada" placeholder="@Resources.Contato.ContatoPlaceAreaAproximada" />
+                    <input type="text" name="cidade" id="cidade" placeholder="@Resources.Contato.ContatoPlaceCidade" />
+                    <textarea name="mensagem" id="mensagem" placeholder="@Resources.Contato.ContatoPlaceMensagem"></textarea>
+                    <input type="submit" name="btnEnviar" id="btnEnviar" class="yellowButton" value="@Resources.Contato.ContatoPlaceEnviar" />
+                }
+            </section>
+        }
+
+    </div>
+</header>

@@ -1,0 +1,40 @@
+﻿#header.pt {
+  background-image: url(../img/backgrounds/desenvolvimento-reciclagem-pt.jpg);
+}
+#header.en {
+  background-image: url(../img/backgrounds/desenvolvimento-reciclagem-en.jpg);
+}
+#header.es {
+  background-image: url(../img/backgrounds/desenvolvimento-reciclagem-es.jpg);
+}
+
+#header h1 {
+  width: 933px;
+  height: 108px;
+  background: url(../img/titulos/desenvolvimento-reciclagem.png) center center no-repeat;
+  margin: 450px auto 0;
+}
+#main {
+  background: url(../img/reciclagem.jpg) center top no-repeat;
+  margin-bottom: 60px;
+}
+#main h2 {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1.1em;
+}
+#main h2 span {
+  color: #aba000;
+}
+#main .conteudoReciclagem {
+  padding-left: 180px;
+}
+#main .conteudoReciclagem p {
+  width: 45%;  
+}
+#main .greenButton {
+  margin-left: 50px;
+  font-size: 15px;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=reciclagem.css.map */

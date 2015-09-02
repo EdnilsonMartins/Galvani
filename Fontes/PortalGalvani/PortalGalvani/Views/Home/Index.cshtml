@@ -1,0 +1,15 @@
+﻿@{
+    //ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.Conteudo != null)
+{
+
+    @Html.Raw(Model.Conteudo.Detalhe.Conteudo)
+
+}
+else
+{
+    <h1>Conteúdo não encontrado!</h1>
+}

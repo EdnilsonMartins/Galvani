@@ -1,0 +1,195 @@
+﻿#header {
+    background-image: url('../img/backgrounds/desenvolvimento.jpg');   
+    #contatoRapido {
+        margin: 650px auto 0;
+        width: 980px;
+        input[type="text"], input[type="tel"], input[type="submit"] {
+            border: none;
+            background: #fff;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            font-size: 1rem;
+            color: #0d0e07;
+            font-weight: 300;
+            text-align: center;
+            padding: 0 10px;            
+            float: left;
+            margin: 0 1px;
+        }
+       #wrapperCustomSelect {
+           height: 50px;
+           float: left;
+           margin: 0 1px;
+       }
+        #nome { 
+            width: 200px;
+        }
+        #telefone {
+            width: 180px;
+            background: #f6f6f6;
+        }
+        #assunto {
+             cursor: pointer;
+        }
+
+        .customSelect { 
+        /* This is the default class that is used */
+        /* Put whatever custom styles you want here */
+            border: none;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            font-size: 1rem;
+            color: #0d0e07;
+            font-weight: 300;
+            text-align: center;
+            padding: 0 10px;                        
+            width: 220px;
+            background: url("../img/bgCustomSelect.png") 200px center no-repeat #fff;           
+        }
+
+        .customSelect.customSelectHover {
+        /* Styles for when the select box is hovered */
+        }
+
+        .customSelect.customSelectOpen {
+        /* Styles for when the select box is open */
+        }
+
+        .customSelect.customSelectFocus {
+        /* Styles for when the select box is in focus */
+        }
+
+        .customSelectInner {
+        /* You can style the inner box too */
+        }
+
+        #cidade {
+            width: 170px;
+            background: #f6f6f6;
+        }
+        #enviar {
+            width: 120px;
+            background: #cdc112;
+            color: #fff;
+            font-weight: 900;
+            font-size: 16px;
+            font-size: 1em;
+            line-height: 1em;
+        }
+    }
+}
+
+#main {
+    h2 {
+        font-size: 35px;
+        font-size: 2.3rem;
+        font-weight: 300;
+        text-align: center;        
+    }
+    #materiaPrima {
+        height: 415px;
+        article {
+            width: 25%;
+            float: left;
+            text-align: center;
+            figure {
+                img {
+                    border: 3px solid #fff;
+                }
+                figcaption {
+                    font-size: 30px;
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                }
+                .borderBottom {
+                    width: 50%;
+                    height: 10px;
+                    background-color: #000b23;
+                    margin: 15px auto;
+                    display: none;
+                }
+            }
+            p {
+                display: none;
+                font-size: 18px;
+                font-size: 1.12rem;
+                font-weight: 400;
+            }
+        }
+        article.materiaPrimaOver {
+            figure {
+                img {
+                    border: 3px solid #000b23;
+                }
+                figcaption {                   
+                    font-weight: 900;
+                }
+                .borderBottom {
+                    display: block;
+                }
+            }
+            p {
+                display: block;                
+            }
+        }
+    }
+    #analiseTecnica {
+        margin: 10px 0 50px;
+        text-align: center;    
+        letter-spacing: 2px;    
+        a {
+            color: #d2c72b;
+            font-weight: 700;
+            font-size: 21px;
+            font-size: 1.3rem;
+            img {
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    #obrasLoteamentos {
+        
+        .obras, .loteamentos {
+            width:45.5%;
+            height: 259px;
+            color: #fff;  
+            padding-top: 280px;
+            h3 {
+                font-weight: 900;
+                font-size: 45px;
+                font-size: 2.8rem;    
+                margin: 1rem 0;            
+            }   
+            p {
+                font-weight: 300;
+                font-size: 14px;
+                font-size: 0.9rem;  
+                text-transform: uppercase;
+            }                 
+        }
+        .obras {
+            float: left;
+            background-image: url("../img/obras.jpg");
+            padding-right: 4.5%;           
+            text-align: right;     
+            p {
+                padding-left: 35%;
+            }
+              
+        }
+        .loteamentos {
+            float: right;
+            background-image: url("../img/loteamentos.jpg");
+            padding-left: 4.5%;
+            p {
+                padding-right: 35%;
+            }
+        }
+    }
+}

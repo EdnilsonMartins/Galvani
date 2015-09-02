@@ -1,0 +1,116 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model PortalGalvani.Models.Portal
+
+
+@if (Model.SubMenus != null && Model.SubMenus.Count > 0)
+{
+    <link href="/assets/css/quem-somos.css" rel="stylesheet" />
+    <section id="main" class="engenhariaQuemSomos" data-pagebanner="quemsomos" style="margin-top: 0px; padding-bottom: 0px;">
+        <section id="menuQuemSomos">
+            <ul class="center">
+                @foreach (var m in Model.SubMenus)
+                {
+                    var menuAtivo = "";
+                    if (Model.Conteudo != null && Model.Conteudo.PublicacaoId == m.PublicacaoId)
+                    {
+                        menuAtivo = "menuAtivo";
+                    }
+
+                    var _target = "_self";
+                    if (m.TargetId == 1) { _target = "_parent"; }
+                    if (m.TargetId == 2) { _target = "_blank"; }
+
+                    <li><a class="menu_a @menuAtivo" href="@m.LinkURL" target="@_target" id="menuQuemSomos" title="@m.Detalhe.Rotulo.ToUpper()">@m.Detalhe.Rotulo.ToUpper()</a></li>
+                }
+            </ul>
+        </section>
+    </section>
+}
+
+@if (Model.Conteudo != null)
+{
+    if (Model.Conteudo.PublicacaoTipoId == 5 || Model.Conteudo.PublicacaoTipoId == 6)
+    {
+        @Html.Raw(Model.Conteudo.Detalhe.Conteudo)
+    }
+    else if (Model.Conteudo.PublicacaoTipoId == 3)
+    {
+        var fotoDestaque = "background-image: none;";
+        <style type="text/css">
+            #main .conteudoGenerico {
+                padding: 0 0 60px 180px;
+            }
+        </style>
+        if (Model.FotoDestaque != null)
+        {
+            fotoDestaque = string.Format("background-image: url('http://gruppo01.azurewebsites.net/File?id={0}');", Model.FotoDestaque.ArquivoId);
+            <style type="text/css">
+                #main .conteudoGenerico p {
+                    width: 45%;
+                }
+            </style>
+        }
+        else
+        {
+            <style type="text/css">
+                #main .conteudoGenerico p {
+                    padding-right: 266px;
+                }
+            </style>
+        }
+        <link rel="stylesheet" href="/assets/css/asfalto.css">
+        <link rel="stylesheet" href="/assets/css/loteamentos.css">
+        <link rel="stylesheet" href="/assets/css/jquery.jscrollpane.css">
+        <link rel="stylesheet" href="/assets/css/lightbox.css" />
+        <section id="main" data-pagebanner="obras" style="@fotoDestaque">
+            <div class="center conteudoGenerico">
+                @Html.Raw(Model.Conteudo.Detalhe.Conteudo)
+            </div>
+        </section>
+    }
+
+    if (Model.FotosGaleria.Count > 0)
+    {
+        <section id="main" class="clearfix GaleriaFotos" style="background: none; margin-bottom: 0; margin-top: -100px;">
+            <div class="center">
+                <div style="padding: 0 0 60px 105px; width: 1115px;">
+                    <section class="fotosObras" id="galeriaFotos">
+                        <h3>Fotos</h3>
+                        <div class="scroll-pane">
+                            <ul>
+                                @foreach (var f in Model.FotosGaleria)
+                                {
+                                    <li>
+                                        <a href="http://gruppo01.azurewebsites.net/File?id=@f.ArquivoId" title="" data-lightbox="roadtrip">
+                                            <img src="http://gruppo01.azurewebsites.net/File?id=@f.ArquivoId" alt="" class="" style="visibility: visible; width: 148px;">
+                                        </a>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    }
+
+}
+else
+{
+    <h1>Conteúdo não encontrado!</h1>
+    <span onclick="javascript:history.back();" style="cursor: pointer;">Voltar</span>
+}
+
+<script type="text/javascript">
+
+    if (document.getElementsByClassName("scroll-pane").length > 1) {
+        document.getElementsByClassName("scroll-pane")[0].innerHTML = document.getElementsByClassName("scroll-pane")[1].innerHTML;
+
+        document.getElementsByClassName("scroll-pane")[1].innerHTML = "";
+        document.getElementsByClassName("GaleriaFotos")[0].innerHTML = "";
+    }
+
+</script>

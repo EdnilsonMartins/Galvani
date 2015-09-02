@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a843526b-be4d-4b99-9cef-6fe7ba767899" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://gruppowcf01.azurewebsites.net/IntegracaoPortal.svc " Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IntegracaoPortal.disco" MetadataType="Disco" ID="f437fe18-448b-4bc0-9040-6d1cf793f05a" SourceId="1" SourceUrl="http://gruppowcf01.azurewebsites.net/IntegracaoPortal.svc?disco" />
+    <MetadataFile FileName="IntegracaoPortal.xsd" MetadataType="Schema" ID="2c02e1e5-d641-4c0d-8825-9894dc347cc0" SourceId="1" SourceUrl="http://gruppowcf01.azurewebsites.net/IntegracaoPortal.svc?xsd=xsd4" />
+    <MetadataFile FileName="IntegracaoPortal.wsdl" MetadataType="Wsdl" ID="16535cba-8240-4499-aa6d-44781e5fbc06" SourceId="1" SourceUrl="http://gruppowcf01.azurewebsites.net/IntegracaoPortal.svc?wsdl" />
+    <MetadataFile FileName="IntegracaoPortal1.xsd" MetadataType="Schema" ID="b03563b2-64cb-4725-9cfc-d8aebec64811" SourceId="1" SourceUrl="http://gruppowcf01.azurewebsites.net/IntegracaoPortal.svc?xsd=xsd1" />
+    <MetadataFile FileName="IntegracaoPortal2.xsd" MetadataType="Schema" ID="3f0619f5-680f-4860-bdda-6398afd48419" SourceId="1" SourceUrl="http://gruppowcf01.azurewebsites.net/IntegracaoPortal.svc?xsd=xsd3" />
+    <MetadataFile FileName="IntegracaoPortal3.xsd" MetadataType="Schema" ID="0aba9b08-e192-4a29-a12e-939021541180" SourceId="1" SourceUrl="http://gruppowcf01.azurewebsites.net/IntegracaoPortal.svc?xsd=xsd2" />
+    <MetadataFile FileName="IntegracaoPortal4.xsd" MetadataType="Schema" ID="0fb42300-2fb8-4900-958a-7bf5fa45cd6b" SourceId="1" SourceUrl="http://gruppowcf01.azurewebsites.net/IntegracaoPortal.svc?xsd=xsd5" />
+    <MetadataFile FileName="IntegracaoPortal5.xsd" MetadataType="Schema" ID="32a1507d-4b9b-4817-8652-f6b76f4336c1" SourceId="1" SourceUrl="http://gruppowcf01.azurewebsites.net/IntegracaoPortal.svc?xsd=xsd0" />
+    <MetadataFile FileName="IntegracaoPortal6.xsd" MetadataType="Schema" ID="bc8a33e1-fff4-489e-b364-1b38b2233c1f" SourceId="1" SourceUrl="http://gruppowcf01.azurewebsites.net/IntegracaoPortal.svc?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,61 @@
+﻿#header.pt {
+  background-image: url(../img/backgrounds/acessibilidade-pt.jpg);
+}
+#header.en {
+  background-image: url(../img/backgrounds/acessibilidade-en.jpg);
+}
+#header.es {
+  background-image: url(../img/backgrounds/acessibilidade-es.jpg);
+}
+
+#header h1 {
+  width: 933px;
+  height: 108px;
+  background: url(../img/titulos/desenvolvimento-reciclagem.png) center center no-repeat;
+  margin: 450px auto 0;
+}
+#main {
+  background: url(../img/acessibilidade.jpg) center top no-repeat;
+  margin-bottom: 60px;
+}
+#main h2 {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1.1em;
+}
+#main h2 span {
+  color: #aba000;
+}
+#main .conteudoReciclagem {
+  padding-left: 180px;
+}
+#main .conteudoReciclagem p {
+  width: 45%;  
+}
+
+#main .conteudoReciclagem  h3{
+	text-transform:uppercase;
+	font-size:18px;
+	  margin: 25px 0px;
+	font-weight:bold;
+}
+
+#main .conteudoReciclagem  h3.fonte{
+	background-image:url(../img/icones/lupa.png);
+	background-repeat:no-repeat;
+	padding-left:29px;
+	background-position:0px 5px;
+}
+
+#main .conteudoReciclagem  h3.teclado{
+	background-image:url(../img/icones/teclado.png);
+	background-repeat:no-repeat;
+	padding-left:39px;
+	background-position:0px 5px;
+}
+#main .greenButton {
+  margin-left: 50px;
+  font-size: 15px;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=reciclagem.css.map */
