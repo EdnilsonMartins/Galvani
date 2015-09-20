@@ -78,3 +78,16 @@ materia vou trocar por página - Ok!
 Mobile
 27/08 - Recebi o material do mobile.
 http://m.galvaniengenharia.com.br/
+
+
+20/09/2015---------------------------------------------------------
+- Resolvido problema de layout do icone dos idiomas.
+- Resolvido problema de layout do menu.
+- Adicionada imagem padrão (banner interna superior) com altura mínima de 100px.
+- Imagem padrão para o banner interna superior fica na pasta /assets/imgs/Desenvolvimento.jpg
+- Ajustado leiaute do submenu.
+  Testes realizados:
+  - Desktop: Chrome e Firefox usando o navegador com a janela pequena.
+  - iPhone: Safari e Chrome ficou legal, funcionou tudo. Porém na página de contato precisamos melhorar a largura dos botões.
+  - Galaxy S3 mini: Chrome ficou legal. Usando o navegador padrão do android não funcionou o menu, ou melhor ele só aparece se rotacionar o aparelho.
+  
