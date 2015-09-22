@@ -40,6 +40,15 @@ namespace PortalGalvani.Controllers
 
             Portal model = new Portal(idiomaId);
 
+            if (Request.QueryString.HasKeys())
+            {
+                if (Request.QueryString.GetValues("VersaoDesktop").GetValue(0) == "")
+                {
+                    model.VersaoDesktop = true;
+                }
+            }
+
+
             model.ExibeVideo = true;
             model.ExibeContatoRapido = true;
 

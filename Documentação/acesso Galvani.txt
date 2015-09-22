@@ -91,3 +91,8 @@ http://m.galvaniengenharia.com.br/
   - iPhone: Safari e Chrome ficou legal, funcionou tudo. Porém na página de contato precisamos melhorar a largura dos botões.
   - Galaxy S3 mini: Chrome ficou legal. Usando o navegador padrão do android não funcionou o menu, ou melhor ele só aparece se rotacionar o aparelho.
   
+21/09/2015---------------------------------------------------------
+- Não carregando conteúdo das páginas do mobile. (Ajustado)
+- No site mobile exibir link para versão desktop do site. 
+- No site versão para desktop verificar se o site é mobile e redirecionar.
+- No CMS do Mobile não está fixando o Galvani Mobile no topo.

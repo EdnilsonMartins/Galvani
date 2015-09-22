@@ -25,6 +25,8 @@ namespace PortalGalvani.Models
         public Banner BannerSuperiorInterna { get; set; }
         public Configuracao Configuracao { get; set; }
 
+        public bool? VersaoDesktop { get; set; }
+
         public Portal(int idiomaId)
         {
             ExibeVideo = false;
