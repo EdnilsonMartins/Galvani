@@ -92,7 +92,9 @@ http://m.galvaniengenharia.com.br/
   - Galaxy S3 mini: Chrome ficou legal. Usando o navegador padrão do android não funcionou o menu, ou melhor ele só aparece se rotacionar o aparelho.
   
 21/09/2015---------------------------------------------------------
-- Não carregando conteúdo das páginas do mobile. (Ajustado)
-- No site mobile exibir link para versão desktop do site. 
-- No site versão para desktop verificar se o site é mobile e redirecionar.
-- No CMS do Mobile não está fixando o Galvani Mobile no topo.
+- Não carregando conteúdo das páginas do mobile. (Ajustado - Ok)
+- No site mobile exibir link para versão desktop do site. (Ok)
+- No site versão para desktop verificar se o site é mobile e redirecionar. (Ok)
+- No CMS do Mobile não está fixando o Galvani Mobile no topo.(ok)
+- Ajuste no leiaute da Home na versão Desktop.(Ok)
+- Na versão mobile exibir o conteúdo da publicação da Home. (Ok)
