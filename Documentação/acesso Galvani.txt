@@ -11,7 +11,7 @@ URL: site.galvaniengenharia.com.br
 AZURE
 https://manage.windowsazure.com
 ti@tendenza.com.br
-Ten2012za#
+Ten2012za# => Ju030506
 
 Banco de Dados
 Server  : xpbzlzw7zk.database.windows.net,  1433
@@ -19,6 +19,7 @@ Base	: dbGRUPPO
 Usuário : usuGRUPPOAdmin
 Senha   : letsGRUPPO2015!
 
+200.148.218.2
 ------------------------------------------------------------------------
 
 http://gruppo.tendenza.com.br
@@ -98,3 +99,14 @@ http://m.galvaniengenharia.com.br/
 - No CMS do Mobile não está fixando o Galvani Mobile no topo.(ok)
 - Ajuste no leiaute da Home na versão Desktop.(Ok)
 - Na versão mobile exibir o conteúdo da publicação da Home. (Ok)
+
+
+-------------------------------------------------------------------
+
+brita
+asfalto
+quem somos
+
+arrumar:
+obras (obras.css / imagem2.jpg)
+reciclagem 

@@ -15,8 +15,10 @@
   margin: 450px auto 0;
 }
 #main {
-  background: url(../img/reciclagem.jpg) center top no-repeat;
+  background: url(../img/reciclagem2.jpg) center top no-repeat;
   margin-bottom: 60px;
+  background-position-x: 0px;
+  background-size: 580px;
 }
 #main h2 {
   font-size: 48px;
