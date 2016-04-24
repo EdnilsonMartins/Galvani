@@ -19,11 +19,13 @@
   color: #fff;
 }
 #main {
-  background: url(../img/maquina-obras.jpg) center top no-repeat;
+  background: url(../img/maquina-obras2.jpg) center top no-repeat;
   margin-bottom: 60px;
+  background-position-x: 0px;
+  background-size: 580px;
 }
 #main .center.conteudoObras {
-  padding: 0 0 60px 105px;
+  padding: 0 0 60px 600px;
   width: 1115px;
 }
 #main .conteudoObras p {

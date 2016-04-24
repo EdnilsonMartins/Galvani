@@ -1481,6 +1481,7 @@
     <Content Include="assets\img\maquina-obras-asfalto.png" />
     <Content Include="assets\img\maquina-obras.jpg" />
     <Content Include="assets\img\maquina-obras.png" />
+    <Content Include="assets\img\maquina-obras2.jpg" />
     <Content Include="assets\img\materia-prima\bica-corrida.png" />
     <Content Include="assets\img\materia-prima\brita.png" />
     <Content Include="assets\img\materia-prima\brita\brita1.jpg" />
@@ -1498,6 +1499,7 @@
     <Content Include="assets\img\pedra-brita-galvani.jpg" />
     <Content Include="assets\img\reciclagem.jpg" />
     <Content Include="assets\img\reciclagem.png" />
+    <Content Include="assets\img\reciclagem2.jpg" />
     <Content Include="assets\img\relacao-com-a-comunidade.jpg" />
     <Content Include="assets\img\relacao-com-a-comunidade.png" />
     <Content Include="assets\img\seguranca-no-trabalho.png" />
