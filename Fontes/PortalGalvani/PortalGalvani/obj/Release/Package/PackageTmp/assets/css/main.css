@@ -58,7 +58,8 @@ body{
 .translation-links{
     position: absolute;
     top: -17px;
-    right: 145px;
+    /*right: 145px;*/
+    right: 274px;
 }
 .translation-links li{
     list-style:none;
@@ -234,7 +235,7 @@ body{
    Helper classes
    ========================================================================== */
 .center {
-  width: 1220px;
+  /*width: 1220px;*/
   margin: 0 auto;
 }
 .yellowButton,
