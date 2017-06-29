@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
 This file is used by the publish/package process of your Web project. You can customize the behavior of this process
 by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
@@ -3745,7 +3745,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/16/2015 18:24:17</publishTime>
     </File>
     <File Include="assets/css/obras.css">
-      <publishTime>08/16/2015 18:24:17</publishTime>
+      <publishTime>04/24/2016 15:13:24</publishTime>
     </File>
     <File Include="assets/css/obras.min.css">
       <publishTime>08/16/2015 18:24:17</publishTime>
@@ -3757,7 +3757,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/16/2015 18:24:17</publishTime>
     </File>
     <File Include="assets/css/reciclagem.css">
-      <publishTime>08/16/2015 18:24:17</publishTime>
+      <publishTime>04/24/2016 15:13:24</publishTime>
     </File>
     <File Include="assets/css/reciclagem.min.css">
       <publishTime>08/16/2015 18:24:17</publishTime>
@@ -3969,6 +3969,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="assets/img/maquina-obras.png">
       <publishTime>08/16/2015 18:24:20</publishTime>
     </File>
+    <File Include="assets/img/maquina-obras2.jpg">
+      <publishTime>04/24/2016 15:13:24</publishTime>
+    </File>
     <File Include="assets/img/materia-prima/bica-corrida.png">
       <publishTime>08/16/2015 18:24:20</publishTime>
     </File>
@@ -4025,6 +4028,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="assets/img/reciclagem.png">
       <publishTime>08/16/2015 18:24:21</publishTime>
+    </File>
+    <File Include="assets/img/reciclagem2.jpg">
+      <publishTime>04/24/2016 15:13:24</publishTime>
     </File>
     <File Include="assets/img/relacao-com-a-comunidade.jpg">
       <publishTime>08/16/2015 18:24:21</publishTime>
@@ -4453,7 +4459,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/15/2015 16:53:19</publishTime>
     </File>
     <File Include="bin/PortalGalvani.dll">
-      <publishTime>09/21/2015 23:12:17</publishTime>
+      <publishTime>04/24/2016 15:13:24</publishTime>
     </File>
     <File Include="bin/System.Net.Http.dll">
       <publishTime>07/09/2013 10:04:48</publishTime>
@@ -4528,7 +4534,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/29/2015 20:23:41</publishTime>
     </File>
     <File Include="Views/Shared/_Header.cshtml">
-      <publishTime>02/11/2016 22:11:37</publishTime>
+      <publishTime>06/26/2017 07:37:06</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>09/21/2015 23:14:19</publishTime>

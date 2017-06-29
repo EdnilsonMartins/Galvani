@@ -1,0 +1,14 @@
+
+#70 = banner multi language
+
+#67 = Foto com limite de tamanho de arquivo
+
+#66 = Fazer upload de várias fotos ao mesmo tempo
+
+#64 = Implementar SALVAR e SALVAR E FECHAR
+
+#60 = goback na lista de árbitros
+
+#53 = Cadastrar o usuario nos 2 sites = 1 unico login
+
+#46 = Solução para facilitar a publicacao das revistas
